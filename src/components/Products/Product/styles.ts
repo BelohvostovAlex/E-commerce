@@ -1,0 +1,53 @@
+export const styles = {
+  productInfo: {
+    width: "100%",
+    height: "100%",
+    position: "absolute",
+    top: "0",
+    left: "0",
+    background: "rgba(0,0,0, 0.2)",
+    zIndex: -1,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    opacity: 0,
+    transition: ".2s ease-in all",
+  },
+  productContainer: {
+    flex: 1,
+    margin: "5px",
+    minWidth: "240px",
+    height: "350px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "#f5fbfd",
+    position: "relative",
+    "&:hover .productInfoBlock": {
+      opacity: 1,
+      zIndex: 1,
+    },
+  },
+  productImg: {
+    height: "100%",
+    width: "100%",
+    objectFit: "cover",
+  },
+
+  productIconWrapper: {
+    width: "40px",
+    height: "40px",
+    borderRadius: "50%",
+    background: "white",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "10px",
+    transition: "all 0.3s ease",
+    cursor: "pointer",
+    "&:hover": {
+      background: "e9f5f5f",
+      transform: "scale(1.1)",
+    },
+  },
+};
